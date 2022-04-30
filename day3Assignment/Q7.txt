@@ -1,0 +1,4 @@
+DELL@DESKTOP-CCTALA5 MINGW64 /d
+$ find /var/log -name log | grep -o -i systemd | wc -l
+find: ‘/var/log’: No such file or directory
+0

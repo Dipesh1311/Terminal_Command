@@ -1,0 +1,21 @@
+a)
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ cat access.log
+
+
+b)
+$ cat access.log | awk '{print $15}'
+
+c)
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ cat access.log |awk '{print $15}' | sort -n
+
+d)
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ cat access.log |awk '{print $15}' | sort | uniq -c | sort -nr | head -4
+   2371 x86_64)
+    358 8.0.0;
+    202 10.0;
+     98 4.4.2;
+
+

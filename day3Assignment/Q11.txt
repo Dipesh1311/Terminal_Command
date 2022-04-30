@@ -1,0 +1,55 @@
+a)
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ cat access.log
+
+b)
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ cat access.log | awk '{print $4 " "$15}'
+[11/Sep/2019:22:54:52 +http://www.google.com/bot.html)"
+[14/Sep/2019:06:36:37 http://cloudsystemnetworks.com)"
+[14/Sep/2019:18:56:46 +http://www.google.com/bot.html)"
+[14/Sep/2019:18:56:46 +http://www.google.com/bot.html)"
+[14/Sep/2019:20:44:44 +http://www.google.com/bot.html)"
+[15/Sep/2019:13:56:11 +http://www.google.com/bot.html)"
+[15/Sep/2019:17:37:56 Linux
+[16/Sep/2019:09:11:40 +http://www.google.com/bot.html)"
+[16/Sep/2019:09:11:40 +http://www.google.com/bot.html)"
+[16/Sep/2019:10:41:41 +http://www.google.com/bot.html)"
+[17/Sep/2019:03:52:08 x86_64)
+[17/Sep/2019:03:52:08 x86_64)
+[17/Sep/2019:04:17:41 +http://www.google.com/bot.html)"
+[17/Sep/2019:23:33:19 +http://www.google.com/bot.html)"
+[17/Sep/2019:23:33:20 +http://www.google.com/bot.html)"
+[18/Sep/2019:00:45:12 +http://www.google.com/bot.html)"
+.
+.
+.
+
+c)
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ cat access.log | awk '{print $4 " "$15}' | sort -n
+[01/Oct/2019:05:44:10 Mobile;
+[01/Oct/2019:05:44:12 Mobile;
+[01/Oct/2019:05:44:12 Mobile;
+[01/Oct/2019:05:44:12 Mobile;
+[01/Oct/2019:05:44:12 Mobile;
+[01/Oct/2019:05:44:13 Mobile;
+[01/Oct/2019:05:44:13 Mobile;
+[01/Oct/2019:05:46:39 Mobile;
+[01/Oct/2019:05:46:41 Mobile;
+[01/Oct/2019:05:46:41 Mobile;
+[01/Oct/2019:05:46:41 Mobile;
+[01/Oct/2019:05:46:41 Mobile;
+[01/Oct/2019:05:46:41 Mobile;
+[01/Oct/2019:05:46:42 Mobile;
+[01/Oct/2019:05:49:04 8.0.0;
+
+COUNT
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ head -n 4 | cat access.log | awk '{print $4 " "$15}' | sort -n | wc --lines
+3210
+
+d)
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ cat access.log | awk '{print $4 " "$15}' | sort | uniq -c | sort -n
+

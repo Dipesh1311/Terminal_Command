@@ -1,0 +1,6 @@
+DELL@DESKTOP-CCTALA5 MINGW64 /d
+$ ps -f
+     UID     PID    PPID  TTY        STIME COMMAND
+    DELL     533       1 ?        21:32:37 /usr/bin/mintty
+    DELL     534     533 pty0     21:32:37 /usr/bin/bash
+    DELL     830     534 pty0     23:03:52 /usr/bin/ps

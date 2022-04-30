@@ -1,0 +1,16 @@
+DELL@DESKTOP-CCTALA5 MINGW64 /d
+$ if [ ! -d newfolder ]
+then
+        mkdir newfolder
+else
+        echo "Directory Already Exists!"
+fi
+
+DELL@DESKTOP-CCTALA5 MINGW64 /d
+$ if [ ! -d newfolder ]
+then
+        mkdir Linux
+else
+        echo "Directory Already Exists!"
+fi
+Directory Already Exists!

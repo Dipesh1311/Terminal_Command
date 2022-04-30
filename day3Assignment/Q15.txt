@@ -1,0 +1,13 @@
+DELL@DESKTOP-CCTALA5 MINGW64 /d/Shell Script Assignment
+$ touch original-file.sh update-file.sh
+
+DELL@DESKTOP-CCTALA5 MINGW64 /d/Shell Script Assignment
+$ cp original-file.sh original
+
+DELL@DESKTOP-CCTALA5 MINGW64 /d/Shell Script Assignment
+$ cp update-file.sh update
+
+DELL@DESKTOP-CCTALA5 MINGW64 /d/Shell Script Assignment
+$ diff original update
+Only in original: original-file.sh
+Only in update: update-file.sh

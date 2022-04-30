@@ -1,0 +1,11 @@
+DELL@DESKTOP-CCTALA5 MINGW64 /d/Linux
+$ echo "${file%%.*}"
+abc
+
+DELL@DESKTOP-CCTALA5 MINGW64 /d/Linux
+$ echo "${file##.*}"
+abc.txt
+
+DELL@DESKTOP-CCTALA5 MINGW64 /d/Linux
+$ echo "${file##*.}"
+txt

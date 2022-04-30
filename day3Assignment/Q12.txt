@@ -1,0 +1,5 @@
+a)
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ cat access.log
+
+b)

@@ -1,0 +1,3 @@
+DELL@DESKTOP-CCTALA5 MINGW64 /d/Shell Script Assignment/var/log
+$ cat temp.txt | grep -o -i systemd | wc -l
+3

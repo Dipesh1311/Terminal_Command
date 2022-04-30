@@ -1,0 +1,37 @@
+I)
+
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ awk '{if($4>10000) print $2 " " $7}' data.csv
+EmployeeName TotalPay
+NATHANIEL 567595
+GARY 538909
+ALBERT 335279
+CHRISTOPHER 332343
+PATRICK 326373
+DAVID 316285
+ALSON 315981
+DAVID 307899
+JOANNE 302377
+PATRICIA 297608
+EDWARD 294580
+
+II)
+
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ grep CAPTAIN data.csv | awk '{print $3 " " $7}'
+CAPTAIN 538909
+CAPTAIN 335279
+CAPTAIN 297608
+
+III)
+
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$  awk '{if(($5 >= 7000)&& ($5 <= 10000)) print $3" "$5}' data.csv
+DEPUTYCHIEF 9737
+ASSTDEPUTY 8601
+
+IV)
+
+DELL@DESKTOP-CCTALA5 MINGW64 /d/linux-content (master)
+$ awk '{sum += $4}END{print sum/(NR-1)}' data.csv
+172333
